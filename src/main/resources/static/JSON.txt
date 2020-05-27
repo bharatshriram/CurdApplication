@@ -1,0 +1,64 @@
+Request: For Create
+===================
+URL: localhost:8090/registerController/create-register
+	{
+		
+		"name":"Bharat Shriram",
+		"mobileNo":"7276115482",
+		"emailId":"bhrtsriram@gmail.com",
+		"address":"Nanded"
+		
+	}
+
+Response : 
+
+{
+    "isSuccess": true,
+    "messageString": "Created Successfully",
+    "responseObject": null
+}
+
+Request For Edit:
+====================
+URL: localhost:8090/registerController/edit-register
+	{
+"id":1,
+		"name":"Bharatt Shriram",
+		"mobileNo":"7276115482",
+		"emailId":"bhrtsriram@gmail.com",
+		"address":"Nanded"
+		
+	}
+	
+	Response: 
+
+	{
+    "isSuccess": true,
+    "messageString": "Edited Successfully",
+    "responseObject": null
+}
+
+
+Get All  Result:
+====================
+
+
+[
+    {
+        "id": 1,
+        "createdDate": "2020-05-27T21:35:03.000+0000",
+        "name": "Bharat",
+        "address": "Nanded",
+        "mobileNo": "7276115482",
+        "emailId": "bhrtsriram@gmail.com"
+    },
+    {
+        "id": 2,
+        "createdDate": "2020-05-27T21:36:05.000+0000",
+        "name": "Bharat Shriram",
+        "address": "Nanded",
+        "mobileNo": "7276115482",
+        "emailId": "bhrtsriram@gmail.com"
+    }
+]
+
